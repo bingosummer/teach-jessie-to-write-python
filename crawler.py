@@ -17,4 +17,4 @@ for link in soup.find_all('a'):
         if href.startswith("http"):
             print href
         else:
-            print "http://en.people.cn{0}".format(href)
+            print "{0}{1}".format(url, href)
